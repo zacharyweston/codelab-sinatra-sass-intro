@@ -15,6 +15,8 @@ $headings-font-family: "Garamond", "Verdana", "sans-serif";
 $tooltip-opacity: 0.7;
 $alert-padding: 10px;
 $screen-sm: 700px;
+$btn-font-weight: 16px;
+
 
 @import 'bootstrap';
 
@@ -25,7 +27,6 @@ $screen-sm: 700px;
     padding: 30px 0;
   }
 }
-// TODO
 
 .jumbotron {
   box-shadow: 0 1px 2px rgba(0,0,0,0.3);
