@@ -55,9 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @mixin rotate($deg, $direction) {
-  -webkit-transform: rotate(#{$deg}, #{$direction});
-  -ms-transform: rotate(#{$deg}, #{$direction});
-  transform: rotate(#{$deg}, #{$direction});
+  -webkit-transform: rotate($direction);
+  -ms-transform: rotate($direction);
+  transform: rotate($direction);
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
