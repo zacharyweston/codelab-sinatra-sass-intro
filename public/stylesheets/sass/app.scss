@@ -21,7 +21,7 @@ $btn-font-weight: 16px;
 @import 'bootstrap';
 
 .container {
-  background-color: darken($body-bg, 8%);
+  $background-color: darken($body-bg, 8%);
   box-shadow: 0 20px 0 20px $background-color;
   &>footer {
     padding: 30px 0;
@@ -54,15 +54,15 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px dotted $brand-primary;
 }
 
-@mixin rotate($deg, $direction) {
-  -webkit-transform: rotate($direction);
-  -ms-transform: rotate($direction);
-  transform: rotate($direction);
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
+@mixin rotateFromOrigin($deg, $direction) {
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+  -webkit-transform-origin: $direction;
+  -ms-transform-origin: $direction;
+  transform-origin: $direction;
 }
 
 .project-name {
-  @include rotate(-3, "left")
+  @include rotateFromOrigin(-9deg, left)
 }
